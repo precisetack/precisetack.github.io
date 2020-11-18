@@ -1,0 +1,1499 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+ 	font-family: 'Poppins', sans-serif;
+ 	font-size: 62.5%;
+ }
+
+
+main{
+	animation: transitionIn 1.5s;
+}
+
+@keyframes transitionIn{
+	from{
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.wrapper{
+	height: 100%;
+	width: 100%;
+}
+header{
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	height: 80px;
+	width: 100%;
+	padding: 0 5rem 0 5rem;
+	z-index: 1;
+}
+
+.logo{
+	width: 10%;
+	margin: auto;
+}
+
+.logo img{
+	width: 80px;
+}
+
+.navbox{
+	width: 90%;
+	top: 1rem;
+}
+.navbar{
+	line-height: 80px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+
+}
+
+.navlink{
+	color: #ff6600;
+	text-decoration: none;
+	font-size: 1.5rem;
+	padding: 0 2.5rem;
+}
+
+.navlink:hover{
+	background-color: #ff6600;
+	color: white;
+	font-weight: bold;
+	border: 2px solid black;
+	padding: 1rem;
+	box-shadow: 0 4px 3px gray;
+	
+}
+
+.navbar li.active{
+}
+
+.navbar li.active a{
+	background-color: #ff6600;
+	color: white;
+	font-weight: 600;
+	box-shadow: 0 4px 3px gray;
+	padding: 1rem;
+	border-radius: 2rem;
+}
+
+.burger{
+	display: none;
+}
+
+.burger div{
+	width: 25px;
+	height: 5px;
+	background-color: white;
+	margin: 5px;
+	margin-right: 50px;
+	position: relative;
+}
+
+.vl {
+	border-right: 2px solid  #ff6600;
+	height: 12vh;
+	align-self: center;
+	margin-right: 3.5rem;
+}
+
+.datetime{
+	width: 10%;
+	color: black;
+	font-size: 1.3rem;
+	margin-top: 2.5rem;
+}
+
+main{
+	width: 100%;
+	margin-top: 5.2%;
+	margin-bottom: 30px;
+	min-height: calc(100vh - 226px);
+}
+
+.index-main{
+	width: 100%;
+	margin-top: 10.3%;
+	margin-bottom: 70px;
+
+}
+
+.home-content{
+	text-align: center;
+	width: 100%;
+
+}
+
+.home-content h1{
+	font-size: 30rem;
+	margin: auto;
+	background-image: url("images/rizal.jpg");
+	background-size: cover;
+	background-position: center;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-filter: drop-shadow(15px 15px 10px black);
+	
+}
+
+.overview{
+	background-color: rgba(255, 102, 0, 0.7);
+	width: 50%;
+	margin: auto;
+	font-size: 2rem;
+	border-radius: 2rem;
+}
+
+.overview p{
+	text-align: center;
+	color: white;
+	padding: 2rem 2rem 1rem 2rem;
+
+}
+
+
+.history-main{
+	margin-top: 8%;
+	width: 100%;
+	
+}
+
+.history-content{
+	width: 80%;
+	color: white;
+	margin: auto;
+	padding: auto;
+}
+
+.history-facts{
+	border-top-left-radius: 3rem;
+	border-top-right-radius: 3rem;
+	background-color: rgba(255, 102, 0, 0.7);
+	display: grid;
+	grid-template-columns: 60% 40%;
+	padding: 1rem 2rem 8rem 2rem;
+}
+.facts, .geo{
+	font-size: 2rem;
+	text-align: justify;
+}
+.facts h3{
+	text-align: center;
+	text-shadow: 3px 3px 3px black;
+}
+
+.h-word{
+	background-image: url("images/history.jpeg");
+	background-size: all;
+	background-position: center;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-filter: drop-shadow(3px 3px 0px black);
+	margin: 0 auto;
+}
+
+
+.gong img{
+	border: 2px solid white;
+	width: 40%;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 20%;
+}
+.rhino img{
+	border: 2px solid white;
+	width: 50%;
+	position: absolute;
+	top: 71%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.geography{
+	display: grid;
+	grid-template-columns: 70% 30%;
+	padding-right: 5rem;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-bottom-left-radius: 3rem;
+	border-bottom-right-radius: 3rem;
+	padding-bottom: 5rem;
+}
+
+.h-word, .geo-word{
+	font-size: 6rem;
+	font-weight: 600;
+}
+
+.geo-word{
+	position: relative;
+}
+.geo-word p{
+	background-image: url("images/geo.jpg");
+	background-size: contain;
+	background-position: center;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-filter: drop-shadow(3px 3px 0px black);
+	margin-left: 35%;
+	transform: translateX(-35%);
+	
+}
+
+.kalinga{
+	margin-top: 1%;
+	position: absolute;
+	top: 60%;
+	left: 3rem;
+	transform: translateY(-60%);
+}
+
+.kalinga img{
+	width: 70%;
+	border: 2px solid black;
+}
+
+.map{
+
+}
+.map img{
+	top: 20%;
+	width: 60%;
+	left: 35%;
+	position: absolute;
+	border: 1px solid black;
+	box-shadow: -5px 5px 0 black;
+}
+
+.map label{
+	font-size: 1.5rem;
+	position: absolute;
+	font-size: 3.5rem;
+	color: black;
+	margin-left: 50%;
+}
+
+.triangle-left{
+	width: 0;
+	height: 0;
+	border-top: 200px solid transparent;
+	border-right: 60px solid black;
+	border-bottom: 230px solid transparent;
+	opacity: 0.5;
+	margin-left: 27%;
+	margin-top: 7%;
+}
+
+.geo p, .geo li{
+	color: black;
+}
+
+.landmarks-main{
+	margin-top: 10%;
+}
+
+.landmarks-content{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.landmarks-content img, .toenjoy-content img, .financial img, .schools img, .health img{
+	border: 2px solid white;
+	box-shadow: 5px 5px 3px black;
+}
+
+.landmarks-content h1{
+	font-size: 5rem;
+	font-weight: 600;
+	background-image: url("images/tapis.jpg");
+	background-size: all;
+	background-position: top;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-filter: drop-shadow(-3px 3px 0px black);
+	border-top: 3px solid white;
+	
+}
+
+.landmarks-content p{
+	font-size: 1.5rem;
+	background-color: white;
+	color: #ff6600;
+	box-shadow: 5px 5px 3px black;
+}
+.lm, .sites, .church{
+	background-color: rgba(255, 102, 0, 0.6);
+	border-bottom-left-radius: 3rem;
+	border-bottom-right-radius: 3rem;
+}
+
+.lm h1{
+	text-align: left;
+	padding-left: 4rem;
+}
+
+.lm-gallery{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin-right: 10px;
+}
+
+.lm-gallery > div{
+	width: 90%;
+	margin: auto;
+}
+
+.mun-hall img{
+	width: 90%;
+	margin-right: -25px;
+}
+
+.mun-hall p{
+	margin-left: 25px;
+}
+
+.police img, .lib img, .sports img{
+	width: 100%;
+}
+
+.sites h1{
+	text-align: right;
+	padding-right: 7rem;
+}
+
+.sites-gallery{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.sites-gallery > div{
+	width: 90%;
+	margin: auto;
+}
+
+.park p, .hill p{
+	width: 80%;
+	margin: auto;
+}
+
+.hill img, .park img{
+	width: 80%;
+}
+
+.church h1{
+	text-align: left;
+	padding-left: 6.5rem;
+}
+
+.church-gallery{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.church-gallery > div{
+	width: 90%;
+	margin: auto;
+}
+
+.smp p, .inc p{
+	width: 70%;
+	margin: auto;
+}
+
+.smp img, .inc img{
+	width: 70%;
+}
+
+.crusado img{
+	width: 100%;
+}
+
+.toenjoy-main{
+ 	margin-top: 8%;
+}
+
+.toenjoy-content{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 50px;
+	border-radius: 2rem;
+}
+
+.toenjoy-content h1{
+	font-size: 7rem;
+	font-weight: 600;
+	background-image: url("images/farm.jpg");
+	background-size: all;
+	background-position: bottom;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-filter: drop-shadow(-3px 3px 0px black);
+	border-top: 3px solid white;
+}
+
+.toenjoy-content p{
+	font-size: 2rem;
+	background-color: white;
+	color: #ff6600;
+	box-shadow: 5px 5px 3px black;
+}
+.fiesta{
+	background-color: rgba(255, 102, 0, 0.7);
+	border-top-right-radius: 3rem;
+	border-top-left-radius: 3rem;
+	border-bottom-right-radius: 3rem;
+	padding-bottom: 3rem;
+}
+
+.fiesta h1{
+	border-top-right-radius: 3rem;
+	border-top-left-radius: 3rem;
+}
+.fiesta-gallery{
+
+}
+
+.fiesta-vid video, .fiesta-vid p{
+	width: 50%;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+.fiesta-vid p{
+	font-size: 2.5rem;
+}
+.pinikpikan p{
+	width: 97%;
+	margin: auto;
+	font-size: 2.5rem;
+}
+
+.fiesta-img {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.fiesta-img img{
+	width: 90%;
+	margin: auto;
+}
+
+.food{
+	border-top-right-radius: 3rem;
+	background-color: rgba(255, 102, 0, 0.7);
+	border-bottom-left-radius: 3rem;
+	padding-bottom: 3rem;
+}
+
+.food h1{
+	border-top-right-radius: 3rem;
+	font-size: 6rem;
+}
+
+.food-gallery{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 0 2rem;
+
+}
+.food-gallery img, .food-gallery p{
+	width: 100%;
+	margin: auto;
+}
+
+.kakanin img, .kakanin p{
+	width: 73%;
+}
+
+.market{
+	border-top-left-radius: 3rem;
+	border-bottom-left-radius: 3rem;
+	border-bottom-right-radius: 3rem;
+	background-color: rgba(255, 102, 0, 0.7);
+	padding-bottom: 3rem;
+}
+
+.market h1{
+	border-top-left-radius: 3rem;
+	font-size: 6rem;
+}
+
+.market p{
+	width: 97%;
+	margin: auto;
+}
+.market-images{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	padding: 0 2rem;
+	align-items: center;
+}
+
+
+.market-images img{
+	width: 100%;
+}
+
+.life-main{
+ 	margin-top: 8%;
+}
+
+.life-content{
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	border-radius: 2rem;
+}
+
+.life-content h1{
+	font-size: 5rem;
+	font-weight: 600;
+	background-image: url("images/farm.jpg");
+	background-size: all;
+	background-position: top;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-filter: drop-shadow(-3px 3px 0 black);
+}
+
+.life-content p{
+	font-size: 2rem;
+	background-color: white;
+	color: #ff6600;
+	box-shadow: 5px 5px 3px black;
+}
+
+
+.fin-live{
+	display: grid;
+	grid-template-columns: 35% 65%;
+}
+.financial{
+	background-color: rgba(255, 102, 0, 0.7);
+	margin-left: 2rem;
+	text-align: center;
+	padding-bottom: 3rem;
+	border-top-left-radius: 3rem;
+	border-bottom-right-radius: 3rem;
+	border-top: 3px solid white;
+}
+
+.financial-gallery{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	padding-right: 3rem;
+}
+
+.coop img{
+	width: 100%;
+}
+
+.bank img{
+	width: 87%;
+}
+
+.bank p{
+	width: 87%;
+	margin: 0 auto;
+}
+
+.livelihood{
+	background-color: rgba(255, 102, 0, 0.7);
+	border-top-right-radius: 3rem;
+	border-bottom-left-radius: 3rem;
+	border-top: 3px solid white;
+}
+
+.livelihood h1{
+	text-align: center;
+}
+
+.livelihood p{
+	display: grid;
+	grid-template-columns: 40% 60%;
+	background-color: transparent;
+	align-items: center;
+	padding: 1rem 0 1rem 10rem;
+	box-shadow: none;
+	border-bottom: 1px solid white;
+	color: white;
+	width: 80%;
+	margin: auto;
+}
+
+.livelihood img{
+	width: 50px;
+}
+
+.schools{
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-row-gap: 1rem;
+	background-color: rgba(255, 102, 0, 0.7);
+	border-top-right-radius: 3rem;
+	border-top-left-radius: 3rem;
+	border-top: 3px solid white;
+	text-align: center;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.schools h1, .health h1{
+	font-size: 6.5rem;
+	padding-left: 1.5rem;
+	margin-bottom: 2rem;
+	
+}
+
+.schools-text p{
+	font-size: 2rem;
+	background-color: transparent;
+	color: white;
+	padding: 1rem 0;
+	box-shadow: none;
+	border-bottom: 1px solid white;
+	width: 80%;
+	margin: auto;
+}
+.rnsat img{
+	width: 89%;
+	margin-left: 9%;
+}
+.rnsat p{
+	width: 89%;
+	margin-left: 10%;
+}
+.sma img{
+	width: 100%;
+}
+.santor img, .santor p{
+	width: 80%;
+}
+.santor p{
+	margin-left: 10%;
+}
+.mapa img, .mapa p{
+	width: 67.2%;
+	margin-right: 10%;
+}
+
+.mapa p{
+	margin-left: 11.5%;
+}
+
+.ksu img, .ksu p{
+	width: 98%;
+}
+
+.ksu p{
+	margin: auto;
+}
+
+.health{
+	background-color: rgba(255, 102, 0, 0.7);
+	border-bottom-right-radius: 3rem;
+	border-bottom-left-radius: 3rem;
+	border-top: 3px solid white;
+	text-align: center;
+	padding-bottom: 3rem;
+}
+.health-gallery{
+	display: grid;
+	grid-template-columns: 35% 65%;
+	grid-gap: 5rem;
+	margin: 0 2rem;
+}
+
+.hospital{
+
+}
+.hospital img, .hospital p{
+	width: 100%;
+	margin-left: 2rem;
+}
+
+.redlab{
+	
+}
+.redlab-images{
+	display: grid;
+	grid-template-columns: 55% 45%;
+	grid-gap
+	grid-row-gap: 1rem;
+	margin-bottom: 0.3rem;
+}
+
+.redlab p{
+	width: 91%;
+
+}
+.redlab1{
+	width: 98%;
+}
+
+.redlab2{
+	width: 81%;
+}
+.redlab p{
+
+}
+.bg-wrapper{
+	background-image: url("images/rizal.jpg");
+	background-size: cover;
+	background-position: center;
+	opacity: 0.7;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border: 1px solid black;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+}
+
+
+.message-main {
+	margin-top: 8%;
+	width: 100%;
+}
+
+.message-content{
+	min-height: 50vh;
+	width: 70%;
+	margin: auto;
+	padding: auto;
+	padding: 4rem;
+	background-color: rgba(255, 102, 0, 0.6);
+	color: white;
+	border-radius: 3rem;
+}
+
+.form-container{
+	margin: 1rem auto;
+	width: 60%;
+	background-color: gray;
+	font-size: 2rem;
+	padding: 1rem;
+	border-radius: 1rem;
+	display: flex;
+	justify-content: center;
+	box-shadow: 3px 3px 0 white;
+}
+#name{
+	width: 80%;
+	height: 3rem;
+}
+#Visitor, #labelV{
+	position: relative;
+	left: 23.5rem;
+}
+
+#mssgbox{
+	width: 100%;
+	min-height: 20vh;
+}
+
+#submitbtn{
+	background-color: #ff6600;
+	padding: 1rem;
+	color: white;
+	font-size: 1.5rem;
+	border: 0.2rem solid white;
+	border-radius: 2rem;
+	box-shadow: 3px 3px 0 black;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+footer{
+	background-color: black;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	padding: 1rem;
+}
+
+.developer{
+	color: #ff6600;
+	font-size: 1.5rem;
+}
+
+.devlink{
+	color: #ff6600;
+}
+
+.devlink:hover {
+	color: white;
+	font-size: 1.6rem;
+}
+
+
+.developer-main{
+	width: 100%;
+}
+
+.developer-content{
+	width: 60%;
+	margin: auto;
+	border-radius: 2rem;
+	border-top: 1rem solid white;
+	border-bottom: 1rem solid white;
+	box-shadow: 5px 5px 5px gray;
+	margin-top: 10%;
+}
+
+.developer-content h2{
+	font-size: 3rem;
+	color:#ff6600;
+	text-align: center;
+	padding: 1rem;
+	background-color: white;
+	border-radius: 1rem;
+}
+
+.profile{
+	margin: 2rem;
+	border-radius: 3rem;
+}
+.profile img{
+	width: 30%;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	padding: 1rem;
+	background-color: white;
+	box-shadow: 5px 5px 5px gray;
+	
+}
+.developer-about{
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.intro{
+	padding: 2rem 1rem;
+	text-align: center;
+	font-size: 2rem;
+	color: white;
+}
+
+.about-body{
+	display: flex;
+	alignment-baseline: start;
+
+}
+
+.about-body h1{
+	text-align: center;
+	font-size: 2.5rem;
+	color: #ff6600;
+}
+.about-body p, ul{
+	font-size: 1.5rem;
+	text-align: justify;
+	color: white;
+}
+.educ, .why-it, .projects{
+	width: 33%;
+	padding: 1rem;
+}
+.projects{
+	margin-top: 0.5%;
+}
+
+.projects ul{
+	list-style: none;
+}
+.copyright{
+	font-size: 1.3rem;
+}
+
+.socialmedia img{
+	width: 25px;
+	cursor: pointer;
+}
+
+main img{
+	cursor: pointer;
+}
+.modal{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	overflow: auto;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 1;
+}
+
+.modal-content{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.close {
+	position: absolute;
+	top: 2%;
+	right: 2%;
+	cursor: pointer;
+	width: 25%;
+}
+
+.close img{
+	margin-left: 80%;
+	width: 25%;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+.close img:hover{
+	transform: rotate(45deg) scale(1.2);
+}
+
+.full-img{
+	height: 90vh;
+}
+.modal.appear {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.modal.appear .full-img{
+	animation: zoom 0.3s ease-out; 
+}
+.modal.appear .close{
+	animation: pop 0.6s ease;
+}
+@keyframes zoom{
+	from {
+		transform: scale(0.5);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes pop{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@media screen and (max-width:1328px){		
+	.navlink{
+		padding: 0;
+		border: none;
+
+	}
+	.home-content h1{
+		font-size: 25rem;
+	}
+	.datetime{
+		width: 15%;
+	}
+}
+
+@media screen and (max-width:1281px){
+	.home-content h1{
+		font-size: 25rem;
+	}
+}
+
+
+@media screen and (max-width:1160px){
+	header{
+		background-color: #ff6600;
+	}
+	.logo{
+		left: 0;
+		position: absolute;
+	}
+
+	.logo img{
+		border-radius: 50%;
+	}
+	.navbar{
+		position: absolute;
+		right: 0px;
+		height: 100vh;
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		width: 100%;
+		background-color: rgba(255, 105, 0, 0.9);
+		clip-path: circle(100px at 90% -50%);
+		-webkit-clip-path: circle(100px at 90% -50%);
+		transition: all 1s ease-out;
+		z-index: 1;
+	}
+
+	.navlink{
+		color: white;
+		text-shadow: none;
+	}
+
+	.navlink:hover{
+		text-shadow: none;
+		font-weight: bold;
+		font-size: 1.8rem;
+		border-radius: 0;
+		background-color: transparent;
+		border: 2px solid white;
+	}
+
+	.navbar li.active a{
+		background-color: white;
+		color: #ff6600;
+		font-weight: 600;
+		box-shadow: none;
+		padding: 1rem;
+		border-radius: 2rem;
+	}
+	.vl{
+		display: none;
+	}
+	.datetime{
+		left: 100px;
+		position: absolute;
+		color: white;
+		width: 25%;
+	}
+	.burger{
+		display: block;
+		right: 1vh;
+		position: absolute;
+		z-index: 1;
+	}
+	
+}
+
+.navbar.open{
+	clip-path: circle(1200px at 90% -20%);
+	-webkit-clip-path: circle(1200px at 90% -20%);
+}
+
+@media screen and (max-width:1024px){
+	.index-main{
+		margin-top: 11.5%;
+	}
+	.overview{
+		width: 60%;
+	}
+	.history-content, .toenjoy-content, .landmarks-content, .life-content{
+		margin-top: 10%;
+		width: 90%;
+	}
+	.facts, .geo{
+		font-size: 1.5rem;
+	}
+	.map label{
+		font-size: 2.5rem;
+		left: 5%;
+	}
+	.geography{
+		padding-top: 1rem;
+	}
+	.geo-word p, .h-word p, .toenjoy-content h1{
+		font-size: 5rem;
+	}
+
+	.triangle-left{
+		border-top: 150px solid transparent;
+		border-right: 30px solid black;
+		border-bottom: 230px solid transparent;
+		opacity: 0.5;
+		margin-left: 30%;
+		margin-top: 7%;
+	}
+
+	.landmarks-content h1, .life-content h1{
+		font-size: 4rem;
+	}
+
+	.landmarks-content p{
+		font-size: 1.3rem;
+	}
+
+	.toenjoy-content p{
+		font-size: 1.5rem;
+	}
+	.message-main {
+		margin-top: 10%;
+	}
+	
+	.form-container{
+		font-size: 1.7rem;
+		width: 80%;
+	}
+	.form-container h1{
+		font-size: 3rem;
+		text-align: center;
+	}
+	#Visitor, #labelV{
+		position: relative;
+		left: 21rem;
+	}
+}
+
+@media screen and (max-width:1012px){
+	.home-content h1{
+		font-size: 20rem;
+	}
+}
+
+@media screen and (max-width:813px){
+	.home-content h1{
+		font-size: 15rem;
+	}
+	.overview{
+		font-size: 1.5rem;
+		width: 70%;
+		margin-bottom: 15%;
+	}
+}
+
+@media screen and (max-width:768px){
+	main{
+	margin-bottom: 15px;
+	}
+	.index-main{
+		margin-top: 23%;
+	}
+
+	.history-content, .toenjoy-content, .landmarks-content, .life-content, .message-content{
+		margin-top: 15%;
+	}
+	.map label{
+		font-size: 2rem;
+		top: 15%;
+	}
+
+	.kalinga{
+		width: 40%;
+	}
+
+	.history-facts{
+		padding-bottom: 4rem;
+	}
+	.geography{
+		padding-bottom: 1rem;
+	}
+	.geo-word p, .toenjoy-content h1{
+		font-size: 4rem;
+	}
+
+	.triangle-left{
+		border-top: 145px solid transparent;
+		border-right: 20px solid black;
+		border-bottom: 160px solid transparent;
+		margin-top: 10%;
+	}
+
+	.landmarks-content h1, .toenjoy-content h1{
+		-webkit-filter: drop-shadow(-2px 2px 0px black);
+	}
+	.landmarks-content h1, .life-content h1{
+		font-size: 3rem;
+	}
+
+	.landmarks-content p{
+		font-size: 1.3rem;
+	}
+
+	.toenjoy-content p{
+		font-size: 1.5rem;
+	}
+	
+	.life-content p{
+		font-size: 1.5rem;
+	}
+	.financial-gallery{
+		display: flex;
+		flex-direction: column;
+		padding-right: 0;
+	}
+
+	.coop img, .bank img{
+		width: 50%;
+		margin-top: 10px;
+	}
+
+	.bank p, .coop p{
+		width: 50%;
+		margin: 0 auto;
+	}
+	.financial h1{
+		padding-top: 2rem;
+	}
+
+	.livelihood h1{
+		padding: 2rem 0;
+	}
+
+	.livelihood p{
+		display: flex;
+		padding: 1rem 0 1rem 5rem;
+	}
+
+	.schools{
+		padding-right: 2%;
+	}
+
+	.schools-text p{
+		font-size: 1.5rem;
+	}
+	.health{
+		padding-right: 4rem;
+	}
+	.form-container{
+		font-size: 1.5rem;
+	}
+	.form-container h1{
+		font-size: 2.5rem;
+	}
+	#Visitor, #labelV{
+		left: 17.5rem;
+	}
+	#submitbtn{
+		font-size: 1.3rem;
+	}
+}
+
+@media screen and (max-width:614px){		
+	.home-content h1{
+		font-size: 10rem;
+		font-weight: 900;
+	}
+	.overview{
+		font-size: 1.5rem;
+		width: 90%;
+	}
+}
+
+@media screen and (max-width:500px){
+	
+	.index-main{
+		margin-top: 43%;
+	}
+	.history-content, .toenjoy-content, .landmarks-content, .life-content, .message-content{
+		margin-top: 25%;
+	}
+	.history-content{
+		margin-bottom: 5rem;
+	}
+	.navbar{
+		z-index: 3;
+	}
+	.burger{
+		z-index: 4;
+	}
+	.navlink{
+		font-size: 1.2rem;
+	}
+	.navlink:hover{
+		font-weight: bold;
+		font-size: 1.4rem;
+		padding: 0.5rem;
+	}
+	.navbar li.active a{
+		font-size: 1.4rem;
+		padding: 0.5rem;
+	}
+	.facts, .geo{
+		font-size: 1.4rem;
+	}
+	.facts h3{
+		padding-top: 2rem;
+	}
+	.h-word p{
+		font-size: 3.5rem;
+	}
+	.geo-word p{
+		font-size: 2.6rem;
+	}
+
+	.gong img{
+		width: 70%;
+		top: 30%;
+	}
+	.rhino img{
+		width: 80%;
+	}
+	
+	.geography{
+		grid-template-columns: 70% 30%;
+		padding-right: 1rem;
+	}
+	.kalinga{
+		margin-top: 0;
+		top: 23%;
+		left: 1rem;
+	}
+
+	.kalinga img{
+		width: 100%;
+		border: 2px solid black;
+	}
+
+	.map img{
+		top: 32%;
+		width: 90%;
+		left: 1rem;
+		box-shadow: -5px -5px 0 black;
+	}
+
+	.map label{
+		position: absolute;
+		font-size: 1.5rem;
+		top: 33%;
+		margin-left: 50%;
+		z-index: 1;
+	}
+
+	.triangle-left{
+		border-bottom: 60px solid black;
+		border-left: 110px solid transparent;
+		border-right: 160px solid transparent;
+		border-top: none;
+		opacity: 0.5;
+		margin-left: 1%;
+		margin-top: 18%;
+	}
+	.landmarks-content h1, .life-content h1{
+		font-size: 2.3rem;
+		-webkit-filter: drop-shadow(-1px 1px 0px black);
+	}
+	.landmarks-content h1{
+		padding: 1rem;
+		text-align: center;
+	}
+	.landmarks-content p{
+		font-size: 1rem;
+	}
+	.toenjoy-content h1{
+		font-size: 3rem;
+	}
+	.toenjoy-content p, .life-content p{
+		font-size: 1.2rem;
+	}
+	.mun-hall img{
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.mun-hall p{
+		width: 100%;
+		margin-left: -0.5%
+	}
+	.lm{
+		padding-left: 1rem;
+	}	
+	.fiesta-vid video, .fiesta-vid p{
+		width: 100%;
+	}
+	.financial h1{
+		padding-top: 1rem;
+	}
+	.livelihood h1{
+		padding: 1rem 0 2rem 0;
+	}	
+	.coop img, .bank img{
+		width: 80%;
+		margin-top: 10px;
+	}
+	.bank p, .coop p{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.livelihood p{
+		display: flex;
+		padding: 1rem 0 1rem 2rem;
+	}
+	.schools-text h1{
+		margin-bottom: 0;
+		font-size: 2rem;
+	}
+	.schools-text p{
+		font-size: 1.3rem;
+	}
+	.health h1{
+		padding: 1rem 0 0 5rem;
+	}
+	.hospital{
+		margin-left: -10%;
+	}
+	.message-content{
+		width: 90%;
+	}
+	.form-container{
+		width: 100%;
+	}
+	#submitbtn{
+		font-size: 1.3rem;
+		padding: 0.5rem;
+	}
+	.developer-main{
+		margin-top: 20%;
+	}
+	.developer-content{
+		width: 90%;
+	}
+
+	.developer-content h2{
+		font-size: 2rem;
+		padding: 0.5rem;
+	}
+
+	.profile img{
+		width: 50%;		
+	}
+
+	.intro{
+		font-size: 1.5rem;
+	}
+
+	.about-body h1{
+		font-size: 1.8rem;
+	}
+	.about-body p, ul{
+		font-size: 1.2rem;
+	}
+	.educ, .why-it, .projects{
+		width: 33%;
+		padding: 1rem;
+	}
+	.projects h1{
+		font-size: 1.5rem;
+		padding-bottom: 1.7rem;
+	}
+
+}
