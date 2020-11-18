@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax Lesson</title>
+	<script type="text/javascript">
+		function getDataFromXml(){
+			var xmlhttp;
+
+			if(window.XMLHttpRequest){
+				xmlhttp = new XMLHttpRequest();
+			} else {
+				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+
+			xmlhttp.onreadystatechange=function(){
+				if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+					xmldata = xmlhttp.responseXML;
+					var movies = xmldata.getElementsByTagName("movie");
+					var output = "<ul>";
+
+					//output += movies[0].getElementsByTagName("title")[0].firstChild.nodeValue;
+
+					for(i=0; i<movies.length; i++){
+						output += '<li>' + movies[i].getElementsByTagName("title")[i].firstChild.nodeValue + '</li>';
+					}
+					output += "</ul>";
+					document.getElementById('data').innerHTML = output;
+				}
+			}
+
+			xmlhttp.open("GET", "movies.xml", true);
+			xmlhttp.send();
+		}
+	</script>
+</head>
+<body>
+	<div id="data">
+		<h2>Replace this text</h2>
+	</div>
+
+	<button type="button" onclick="getDataFromXml()">Get Data</button>
+</body>
+</html>
